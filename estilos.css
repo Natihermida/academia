@@ -1,0 +1,108 @@
+/* Estilo para la imagen del logo */
+.logo img {
+    display: block; /* Elimina cualquier espacio extra debajo de la imagen */
+    margin: 0; /* Elimina márgenes alrededor de la imagen */
+    max-width: 200px; /* Ajusta el tamaño máximo del logo */
+    height: auto; /* Mantiene las proporciones de la imagen */
+}
+
+/* Estilo para la cabecera */
+header {
+    background-color: none;
+    padding: 10px;
+    display: flex; /* Activamos Flexbox para alinear el logo y la navegación */
+    justify-content: space-between; /* Espacia el logo y la barra de navegación */
+    align-items: center; /* Alinea verticalmente el logo y la navegación */
+}
+/* Asegurarse de que la barra de navegación ocupe todo el ancho */
+nav {
+    display: flex;
+    justify-content: flex-start;  /* Alinea los elementos a la izquierda */
+    gap: 20px;  /* Espacio entre los elementos */
+    padding: 5px 20px;  /* Relleno dentro de la barra */
+    border-top: 2px solid black;  /* Línea superior */
+    border-bottom: 2px solid black;  /* Línea inferior */
+    width: 100%;  /* Asegura que la barra ocupe todo el ancho */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+}
+/* Estilo para los enlaces */
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+/* Estilo del bloque "Entradas recientes" */
+.recent-entries h3, .topics h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.recent-entries ul, .topics ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recent-entries ul li, .topics ul li {
+    margin-bottom: 10px;
+}
+
+.recent-entries ul li a, .topics ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+.recent-entries ul li a:hover, .topics ul li a:hover {
+    color: #007BFF;
+}
+
+/* Contenedor de las imágenes */
+.images-container {
+    display: grid; /* Usamos Grid Layout para alinear las imágenes */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    grid-template-rows: repeat(2, 1fr); /* 2 filas de igual tamaño */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-left: 270px; /* Deja espacio para el menú lateral */
+    padding: 10px 20px; /* Reduce el relleno para acercar las imágenes */
+    margin-top: -250px; /* Ajustamos el margen superior para alinear las imágenes */
+}
+
+/* Estilo para cada bloque de imagen y pie de foto */
+.image-item {
+    display: flex; /* Usamos Flexbox para alinear imagen y texto */
+    flex-direction: column; /* Coloca la imagen y el texto uno debajo del otro */
+    justify-content: center; /* Centra los elementos dentro del bloque */
+    align-items: center; /* Alinea los elementos horizontalmente */
+    text-align: center; /* Centra el texto debajo de la imagen */
+    height: 100%; /* Asegura que el bloque ocupe toda la altura de la celda */
+}
+
+/* Estilo para la imagen */
+.image-item img {
+    width: 100%; /* Ajusta el tamaño de la imagen para que ocupe el 100% de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-height: 200px; /* Limita la altura máxima de la imagen para que todas sean del mismo tamaño */
+}
+
+/* Estilo para el texto debajo de la imagen (pie de foto) */
+.image-description p {
+    font-size: 1rem; /* Tamaño de la fuente */
+    color: #555; /* Color de texto más suave */
+    margin-top: 10px; /* Espaciado entre la imagen y el texto */
+    line-height: 1.5; /* Mejor legibilidad del texto */
+    font-weight: normal; /* Texto no en negrita */
+}
+
+/* Aseguramos que los textos debajo de las imágenes estén bien alineados */
+.image-item p {
+    font-size: 1rem; /* Tamaño de fuente ajustado */
+    color: #333; /* Color de texto */
+    margin-top: 10px; /* Espacio entre el nombre del curso y las líneas comerciales */
+    line-height: 1.5; /* Mejor legibilidad */
+}
